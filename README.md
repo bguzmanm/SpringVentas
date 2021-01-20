@@ -8,3 +8,7 @@ Para utilizarlo, debes primero, en Eclipse, instalar los addonds de STS. Sigue l
 4. Reinicia Eclipse.
 
 Recuerda que debes ejecutar el proyecto, no un archivo en particular.
+
+## Cambios del 20 de Enero.
+- Incluimos patrones en URI del RequestMapping
+- Incluimos paso de parámetros por POST con @RequestParam
