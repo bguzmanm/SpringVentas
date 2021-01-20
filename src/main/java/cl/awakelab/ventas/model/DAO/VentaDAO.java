@@ -49,4 +49,8 @@ public class VentaDAO {
 
 	}
 
+	public void update(Venta v) {
+		
+	}
+	
 }
