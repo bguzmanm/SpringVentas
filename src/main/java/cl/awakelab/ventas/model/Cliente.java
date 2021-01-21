@@ -3,21 +3,26 @@ package cl.awakelab.ventas.model;
 public class Cliente {
 	
 	private int id;
-	private String rut;
 	private String nombre;
-	private String apellido;
+	private String direccion;
+	private String website;
+	private Double credito;
 	
 	public Cliente() {
 		
 	}
 	
-	public Cliente(int id, String rut, String nombre, String apellido) {
+
+	public Cliente(int id, String nombre, String direccion, String website, Double credito) {
 		super();
 		this.id = id;
-		this.rut = rut;
 		this.nombre = nombre;
-		this.apellido = apellido;
+		this.direccion = direccion;
+		this.website = website;
+		this.credito = credito;
 	}
+
+
 
 	public int getId() {
 		return id;
@@ -25,14 +30,6 @@ public class Cliente {
 
 	public void setId(int id) {
 		this.id = id;
-	}
-
-	public String getRut() {
-		return rut;
-	}
-
-	public void setRut(String rut) {
-		this.rut = rut;
 	}
 
 	public String getNombre() {
@@ -43,12 +40,30 @@ public class Cliente {
 		this.nombre = nombre;
 	}
 
-	public String getApellido() {
-		return apellido;
+	public String getDireccion() {
+		return direccion;
 	}
 
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
 	}
+
+	public String getWebsite() {
+		return website;
+	}
+
+	public void setWebsite(String website) {
+		this.website = website;
+	}
+
+	public Double getCredito() {
+		return credito;
+	}
+
+	public void setCredito(Double credito) {
+		this.credito = credito;
+	}
+	
+	
 	
 }

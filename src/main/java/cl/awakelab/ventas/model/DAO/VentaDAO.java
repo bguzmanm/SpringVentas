@@ -3,10 +3,18 @@ package cl.awakelab.ventas.model.DAO;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.jdbc.core.JdbcTemplate;
+
 import cl.awakelab.ventas.model.Venta;
 
 public class VentaDAO {
 
+	JdbcTemplate template;
+	
+	public void setTemplate(JdbcTemplate template) {
+		this.template = template;
+	}
+	
 	public List<Venta> readAll() {
 
 		List<Venta> ventas = new ArrayList<Venta>();

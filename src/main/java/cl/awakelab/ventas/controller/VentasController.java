@@ -1,11 +1,8 @@
 package cl.awakelab.ventas.controller;
 
-import java.util.Date;
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
 
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +15,8 @@ import cl.awakelab.ventas.model.DAO.VentaDAO;
 
 @Controller
 public class VentasController {
+	
+	
 
 	@RequestMapping(value="/", method = RequestMethod.GET)
 	public String inicio(Model modelo) {
@@ -84,5 +83,6 @@ public class VentasController {
 		
 		return "index";
 	}
+
 	
 }

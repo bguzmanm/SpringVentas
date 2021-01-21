@@ -12,3 +12,16 @@ Recuerda que debes ejecutar el proyecto, no un archivo en particular.
 ## Cambios del 20 de Enero.
 - Incluimos patrones en URI del RequestMapping
 - Incluimos paso de parámetros por POST con @RequestParam
+
+
+## Cambios del 21 de Enero.
+- Implementamos JdbcTemplate (en archivo spring-context.xml). 
+- Incluimos dependencias necesarias en pom.xml
+- Creamos vista clientes.jsp
+- Correjimos clase Clientes para que reciba datos de tabla customers (base de ejemplo de Oracle [^1]) .
+- Creamos Interfae IClienteDAO
+- Correjimos implementación de ClienteDAO para que impemente JdbcTemplate.
+
+
+[^1]:	La BD que utilizo es [esta](https://www.oracletutorial.com/getting-started/oracle-sample-database/), adaptada a Oracle11g XE
+
