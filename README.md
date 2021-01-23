@@ -22,6 +22,12 @@ Recuerda que debes ejecutar el proyecto, no un archivo en particular.
 - Creamos Interfae IClienteDAO
 - Correjimos implementación de ClienteDAO para que impemente JdbcTemplate.
 
+## Cambios del 22 de Enero.
+- Terminamos de implementar el CRUD de Cliente, con JdbcTemplate
+- Optimizamos mapeo de Cliente en DAO, utilizando la interfaz RowMapper.
+- Agregamos ejemplos de CRUD para Producto, con mapeo incluido.
+- Implementamos vista de Edición Cliente.
+- Utilizamos ModelAndView en ClientesController
+
 
 [^1]:	La BD que utilizo es [esta](https://www.oracletutorial.com/getting-started/oracle-sample-database/), adaptada a Oracle11g XE
-

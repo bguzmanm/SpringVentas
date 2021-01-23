@@ -37,6 +37,12 @@
 						<td><c:out value="${c.getDireccion()}"></c:out></td>
 						<td><c:out value="${c.getWebsite()}"></c:out></td>
 						<td><c:out value="${c.getCredito()}"></c:out></td>
+						<td>
+							<div class="btn-group" role="group">
+								<a href="${pageContext.request.contextPath}/editCliente/${c.getId()}" class="btn btn-warning">Editar</a>
+  								<button type="button" class="btn btn-danger">Borrar</button>
+  							</div>
+						</td>
 					</tr>
 				</c:forEach>
 			</tbody>

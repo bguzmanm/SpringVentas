@@ -22,5 +22,9 @@
 	<bean id="daoventa" class="cl.awakelab.ventas.model.DAO.VentaDAO">
 		<property name="template" ref="jt"></property>
 	</bean>
+	
+	<bean id="daoproducto" class="cl.awakelab.ventas.model.DAO.ProductoDAO">
+		<property name="template" ref="jt"></property>
+	</bean>
 		
 </beans>
